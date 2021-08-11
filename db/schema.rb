@@ -21,7 +21,9 @@ ActiveRecord::Schema.define(version: 2021_08_07_212132) do
     t.string "title"
     t.integer "year"
     t.integer "rating"
+    t.string "qoute"
     t.integer "director_id"
+    t.index ["director_id"], name: "index_movies_on_director_id"
   end
 
 end
