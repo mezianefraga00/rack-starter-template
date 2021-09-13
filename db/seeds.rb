@@ -10,7 +10,6 @@ d4 = Director.create(name: Faker::Name.name, bio: Faker::Movie.title)
     title: Faker::Movie.title, 
     year: [1984, 1985, 1987, 1988, 1989, 1990, 1991, 1992, ].sample,
     rating: (0..10).to_a.sample,
-    qoute: Faker::Lorem.sentences,
     director: [d1, d2, d3, d4].sample 
     
 )
